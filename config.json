@@ -1,0 +1,53 @@
+{
+  "_comment": "=== FILE NÀY CÔNG TY CÓ THỂ CHỈNH SỬA ===",
+
+  "app_title": "Hệ thống quản lý yêu cầu tìm kiếm vật tư",
+  "company_name": "Phòng SCM",
+
+  "admin_emails": [
+    "admin@company.com",
+    "manager@company.com"
+  ],
+
+  "allowed_emails": [
+    "nhanvien1@company.com",
+    "nhanvien2@company.com",
+    "admin@company.com",
+    "manager@company.com"
+  ],
+
+  "muc_dich_options": [
+    "Nghiên cứu mới",
+    "Thay thế vật tư",
+    "Cải tiến sản phẩm",
+    "Tiết giảm chi phí",
+    "Dự phòng nguồn cung"
+  ],
+
+  "phan_loai_options": [
+    "Vật tư A",
+    "Vật tư B",
+    "Linh kiện",
+    "Nguyên vật liệu",
+    "Bao bì"
+  ],
+
+  "phong_ban_options": [
+    "Phòng SCM",
+    "Phòng R&D",
+    "Phòng Kỹ thuật",
+    "Phòng Sản xuất",
+    "Phòng Chất lượng"
+  ],
+
+  "dvt_options": [
+    "Cái", "Bộ", "Kg", "Gram", "Lít", "ml",
+    "m", "m2", "m3", "Cuộn", "Thùng", "Hộp"
+  ],
+
+  "pic_mua_hang_options": [
+    "Nguyễn Văn A",
+    "Trần Thị B",
+    "Lê Văn C"
+  ]
+}
