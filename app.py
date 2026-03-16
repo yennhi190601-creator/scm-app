@@ -128,7 +128,9 @@ def get_role(email: str) -> str:
     allowed = [e.strip().lower() for e in cfg.get("allowed_emails", [])]
     em = email.strip().lower()
     if em in admins:  return "admin"
-    if not allowed or em in allowed: return "user"
+    # if not allowed or em in allowed: return "user"
+    domain = em.split("@")[-1]
+    if not allowed or em in allowed or domain in allowed: return "user"
     return "blocked"
 
 def require_auth(request: Request):
