@@ -5,14 +5,14 @@
   "company_name": "Phòng SCM",
 
   "admin_emails": [
-    "admin@company.com",
+    "nhint@tosy.com",
     "manager@company.com"
   ],
 
   "allowed_emails": [
     "nhanvien1@company.com",
     "nhanvien2@company.com",
-    "admin@company.com",
+    "nhint@tosy.com",
     "manager@company.com"
   ],
 
