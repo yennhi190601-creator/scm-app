@@ -212,8 +212,7 @@ async def create_requests(request: Request):
             item["stt"] = new_id
             item["submitted_by"] = email
             item["created_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-append_excel(item)
+            append_excel(item)
         else:
             cur.execute("""
                 INSERT INTO requests (ma_yeu_cau,ngay_yeu_cau,muc_dich,ten_vat_tu,yc_ky_thuat,
