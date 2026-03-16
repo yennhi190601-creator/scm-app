@@ -14,11 +14,12 @@
   ],
 
   "muc_dich_options": [
-    "Nghiên cứu mới",
-    "Thay thế vật tư",
-    "Cải tiến sản phẩm",
-    "Tiết giảm chi phí",
-    "Dự phòng nguồn cung"
+    "Nghiên cứu tiêu chuẩn",
+    "Nghiên cứu CCDC",
+    "Nghiên cứu máy móc",
+    "Nghiên cứu vật tư",
+    "Nghiên cứu công nghệ",
+    "Mua non MP"
   ],
 
   "phan_loai_options": [
