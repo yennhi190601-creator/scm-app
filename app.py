@@ -120,7 +120,7 @@ def init_db():
     conn.close()
 
 init_db()
-init_excel()
+# init_excel()
 # ── Auth ────────────────────────────────────────────────────────────────────────
 def get_role(email: str) -> str:
     cfg = load_config()
@@ -204,14 +204,14 @@ async def create_requests(request: Request):
                 reference,phan_loai,pic_nghien_cuu,phong_ban,pic_mua_hang,yeu_cau_tim_kiem,
                 thoi_han,tbp_duyet,submitted_by) VALUES %s RETURNING stt
             """ % ("(" + ",".join(["%s"]*22) + ")"), params)
-            # inserted.append(cur.fetchone()[0])      #Code cũ lấy thẳng database
+            inserted.append(cur.fetchone()[0])      #Code cũ lấy thẳng database
            # Code mới để append excel
-            new_id = cur.fetchone()[0]
-            inserted.append(new_id)
-            item["stt"] = new_id
-            item["submitted_by"] = email
-            item["created_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            append_excel(item)
+            # new_id = cur.fetchone()[0]
+            # inserted.append(new_id)
+            # item["stt"] = new_id
+            # item["submitted_by"] = email
+            # item["created_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # append_excel(item)
         else:
             cur.execute("""
                 INSERT INTO requests (ma_yeu_cau,ngay_yeu_cau,muc_dich,ten_vat_tu,yc_ky_thuat,
@@ -219,14 +219,14 @@ async def create_requests(request: Request):
                 reference,phan_loai,pic_nghien_cuu,phong_ban,pic_mua_hang,yeu_cau_tim_kiem,
                 thoi_han,tbp_duyet,submitted_by) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """, params)
-            # inserted.append(cur.lastrowid)    #Code cũ lấy thẳng database
+            inserted.append(cur.lastrowid)    #Code cũ lấy thẳng database
             # Code mới để append excel
-            new_id = cur.lastrowid
-            inserted.append(new_id)
-            item["stt"] = new_id
-            item["submitted_by"] = email
-            item["created_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            append_excel(item)
+            # new_id = cur.lastrowid
+            # inserted.append(new_id)
+            # item["stt"] = new_id
+            # item["submitted_by"] = email
+            # item["created_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # append_excel(item)
     
     conn.commit(); conn.close()
     return {"success": True, "inserted": len(inserted), "ids": inserted}
