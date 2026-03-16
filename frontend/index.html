@@ -548,8 +548,8 @@ function renderPagination() {
 }
 function changePage(p) { currentPage = p; loadData(); }
 function searchDebounce() { clearTimeout(searchTimer); searchTimer = setTimeout(()=>{currentPage=1;loadData();},400); }
-function exportExcel() { window.location.href = `/api/export?_=${SESSION.email}`; }
-
+// function exportExcel() { window.location.href = `/api/export?_=${SESSION.email}`; }
+function exportExcel() { window.location.href = `/api/export?email=${SESSION.email}`;}
 // ── Edit modal ────────────────────────────────────────────────────────────────
 function openEditModal(stt, rowData) {
   modalSttRef = stt;
