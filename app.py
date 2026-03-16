@@ -13,7 +13,6 @@ import json
 import os
 import io
 from datetime import datetime
-from excel_logger import init_excel, append_excel   #Thêm vào để excel tự xuất file
 
 # ── Detect DB mode ─────────────────────────────────────────────────────────────
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
