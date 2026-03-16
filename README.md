@@ -1,6 +1,6 @@
 # SCM Request Management System
 
-## Cấu trúc thư mục (SAU KHI NHẬN BÀN GIAO)
+## Cấu trúc thư mục 
 
 ```
 scm_app/
@@ -79,3 +79,4 @@ pyinstaller --onefile --add-data "frontend;frontend" --add-data "config.json;." 
 
 # Output: dist/app.exe
 ```
+WEB: https://scm-app-9q8y.onrender.com
