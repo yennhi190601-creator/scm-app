@@ -310,8 +310,15 @@ async def review_edit_request(edit_id: int, request: Request):
     return {"success": True, "action": new_status}
 
 @app.get("/api/export")
-def export_excel(request: Request):
-    require_admin(request)
+# def export_excel(request: Request):
+def export_excel(request: Request, email: str = ""):
+    if email:
+        role = get_role(email)
+        if role != "admin":
+            raise HTTPException(403, "Khong phai admin")
+    else:
+        require_admin(request)
+    # require_admin(request)
     try:
         import openpyxl
         from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
