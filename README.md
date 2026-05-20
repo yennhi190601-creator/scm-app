@@ -63,16 +63,6 @@ Mở `config.json` bằng Notepad, sửa các mục cần thiết:
 | Duyệt trạng thái | Click vào badge "Chưa duyệt" / "Đã duyệt" để đổi |
 | Xuất Excel | Xuất toàn bộ data có định dạng, màu sắc |
 | Phân trang | 50 bản ghi / trang |
-
----
-
-## Hướng dẫn compile (dành cho SCM data team — giữ nội bộ)
-
-```bash
-# Cài dependencies
-pip install -r requirements.txt
-pip install pyinstaller
-
 # Compile thành exe
 pyinstaller --onefile --add-data "frontend;frontend" --add-data "config.json;." app.py
 
