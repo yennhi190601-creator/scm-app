@@ -18,8 +18,7 @@ scm_app/
 
 ### 1. Khởi động hệ thống
 - Double-click vào file `app.exe`
-- Mở trình duyệt, truy cập: http://localhost:8000
-- Giữ cửa sổ cmd/terminal mở trong quá trình sử dụng
+- Mở trình duyệt, truy cập: http://localhost:8000 để kiểm tra trước, link web sẽ là bản up lên cho user sử dụng
 
 ### 2. Tùy chỉnh danh sách dropdown — sửa file `config.json`
 
