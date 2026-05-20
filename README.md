@@ -1,5 +1,5 @@
 # SCM Request Management System
-
+# Version 1 -- Backup because vesrion 2 have database errors
 ## Cấu trúc thư mục 
 
 ```
