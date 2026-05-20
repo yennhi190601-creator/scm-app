@@ -5,9 +5,9 @@
 ```
 scm_app/
 ├── app.exe           ← Chạy file này để khởi động hệ thống
-├── config.json       ← ✅ CÔNG TY CÓ THỂ SỬA FILE NÀY
+├── config.json       
 ├── frontend/
-│   └── index.html    ← ✅ CÔNG TY CÓ THỂ SỬA GIAO DIỆN
+│   └── index.html    
 └── data/
     └── scm_data.db   ← Database (backup định kỳ)
 ```
@@ -67,7 +67,7 @@ Mở `config.json` bằng Notepad, sửa các mục cần thiết:
 
 ---
 
-## Hướng dẫn compile (dành cho developer — giữ nội bộ)
+## Hướng dẫn compile (dành cho SCM data team — giữ nội bộ)
 
 ```bash
 # Cài dependencies
