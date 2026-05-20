@@ -1,8 +1,4 @@
-"""
-SCM Research Request Management System
-Version: 3.0.0 - Cloud Edition (PostgreSQL + Railway)
-"""
-
+## Main -- Version 1 -- Backup because vesrion 2 have database errors
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
